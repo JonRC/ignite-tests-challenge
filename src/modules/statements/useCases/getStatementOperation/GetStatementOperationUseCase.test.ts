@@ -37,7 +37,7 @@ describe('get statement operation', () => {
 
     const statementId = depositStatement?.id
 
-    const statement = getStatementOperationUseCase.execute({
+    const statement = await getStatementOperationUseCase.execute({
       statement_id: statementId as string,
       user_id: userId as string
     })
